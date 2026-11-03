@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import httpx
 
 docs = sorted(Path("data/policies").glob("*.txt"))
@@ -13,8 +14,12 @@ prompt = (
 for num_ctx in (1024, 4096):
     r = httpx.post(
         "http://localhost:11434/api/generate",
-        json={"model": "qwen3.5:2b", "prompt": prompt, "stream": False,
-              "options": {"num_ctx": num_ctx, "temperature": 0}},
+        json={
+            "model": "qwen3.5:2b",
+            "prompt": prompt,
+            "stream": False,
+            "options": {"num_ctx": num_ctx, "temperature": 0},
+        },
         timeout=300,
     ).json()
     print(f"\nnum_ctx={num_ctx}")

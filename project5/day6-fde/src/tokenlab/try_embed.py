@@ -1,4 +1,4 @@
-from embedder import embed, cosine
+from embedder import cosine, embed
 
 texts = [
     "How many days of annual leave do I get?",

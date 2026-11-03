@@ -4,8 +4,8 @@ from embedder import embed
 
 class VectorStore:
     def __init__(self):
-        self.texts = []      # chunk text
-        self.sources = []    # edhu doc la irundhu vandhadhu
+        self.texts = []  # chunk text
+        self.sources = []  # edhu doc la irundhu vandhadhu
         self.vectors = None  # chunks oda numbers
 
     def add(self, chunks, source):

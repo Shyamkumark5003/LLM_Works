@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
-from chunkers import fixed_chunks, paragraph_chunks, overlap_chunks
+
+from chunkers import fixed_chunks, overlap_chunks, paragraph_chunks
 from store import VectorStore
 
 K = 3
@@ -37,6 +38,10 @@ print("| # | question | fixed | paragraph | overlap |")
 print("|---|---|---|---|---|")
 for i, q in enumerate(questions):
     marks = ["✔" if results[n][i] else "✘" for n, _ in methods]
-    print(f"| {i+1} | {q['question']} | {marks[0]} | {marks[1]} | {marks[2]} |")
+    print(f"| {i + 1} | {q['question']} | {marks[0]} | {marks[1]} | {marks[2]} |")
 
-print("| | **Total** | " + " | ".join(f"**{sum(results[n])}/10**" for n, _ in methods) + " |")
+print(
+    "| | **Total** | "
+    + " | ".join(f"**{sum(results[n])}/10**" for n, _ in methods)
+    + " |"
+)
