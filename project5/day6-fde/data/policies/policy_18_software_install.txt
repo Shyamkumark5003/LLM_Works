@@ -1,0 +1,7 @@
+Software Install Policy
+
+Only approved software can be installed: from the company software catalog. This policy applies to all full time employees of the company.
+
+How to follow: Raise an IT request for new software. Please keep a record of every request for audit.
+
+Exception: Free tools also need security approval. For any doubt, contact the HR team.

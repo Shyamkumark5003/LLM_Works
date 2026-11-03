@@ -1,0 +1,1 @@
+{"name": "Shyam", "role": "QA Engineer", "skills": ["Python", "Pytest", "Selenium"]}

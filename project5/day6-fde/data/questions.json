@@ -1,0 +1,12 @@
+[
+  {"question": "How many days before should I apply for leave?", "doc": "policy_01", "keyword": "7 days"},
+  {"question": "How many sick leave days do I get per year?", "doc": "policy_02", "keyword": "10 days"},
+  {"question": "How many days per week can I work from home?", "doc": "policy_03", "keyword": "2 days per week"},
+  {"question": "Within how many days are expense claims reimbursed?", "doc": "policy_04", "keyword": "15 working days"},
+  {"question": "What is the hotel limit per night for travel?", "doc": "policy_05", "keyword": "6000"},
+  {"question": "How often must I change my password?", "doc": "policy_07", "keyword": "90 days"},
+  {"question": "How long is the notice period when I resign?", "doc": "policy_15", "keyword": "60 days"},
+  {"question": "How much is the referral bonus per hire?", "doc": "policy_13", "keyword": "25000"},
+  {"question": "Within how much time must a security incident be reported?", "doc": "policy_17", "keyword": "24 hours"},
+  {"question": "How many weeks of parental leave do mothers get?", "doc": "policy_19", "keyword": "26 weeks"}
+]
